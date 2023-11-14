@@ -14,4 +14,8 @@ public class Client {
         // Send the guessed number to the connected server
         connectedNode.processModification("Guess:" + number);
     }
+
+    public void receiveMessage(String message) {
+        System.out.println("Client " + clientId + " received: " + message);
+    }
 }
