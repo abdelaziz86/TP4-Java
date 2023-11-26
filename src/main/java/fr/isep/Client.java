@@ -18,4 +18,8 @@ public class Client {
     public void receiveMessage(String message) {
         System.out.println("Client " + clientId + " received: " + message);
     }
+
+    public int getClientId() {
+        return clientId;
+    }
 }

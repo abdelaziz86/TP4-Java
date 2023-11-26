@@ -25,9 +25,13 @@ public class DistributedSystem {
         leader.addClient(client1);
         leader.addClient(client2);
 
-        // Simulate client interaction
+        // Simulate client 1 interaction
         client1.guessNumber(42);
-        client2.guessNumber(55);
+        client1.guessNumber(55);
+
+        // Simulate client 2 interaction
+        client2.guessNumber(51);
+        client2.guessNumber(53);
 
         // Simulate leader suggesting a number
         leader.suggestNumber();
